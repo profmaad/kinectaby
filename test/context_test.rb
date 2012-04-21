@@ -12,7 +12,7 @@ context "Kinectaby::Context stuff" do
   end
 
   test "Count Kinect devices" do
-    assert 1, @context.num_devices
+    assert_equal 1, @context.num_devices
   end
 
   test "Kinect LED constants" do

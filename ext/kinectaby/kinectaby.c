@@ -1,8 +1,8 @@
 #include <ruby.h>
 #include <assert.h>
 
-#include "libfreenect.h"
-#include "libfreenect/libfreenect_sync.h"
+#include <libfreenect.h>
+#include <libfreenect_sync.h>
 
 static VALUE rb_mKinectaby;
 
@@ -257,7 +257,7 @@ void Init_kinectaby()
 	rb_define_const(rb_mKinectaby, "LED_GREEN", INT2FIX(LED_GREEN));
 	rb_define_const(rb_mKinectaby, "LED_RED", INT2FIX(LED_RED));
 	rb_define_const(rb_mKinectaby, "LED_YELLOW", INT2FIX(LED_YELLOW));
-	rb_define_const(rb_mKinectaby, "LED_BLINK_YELLOW", INT2FIX(LED_BLINK_YELLOW));
+	rb_define_const(rb_mKinectaby, "LED_BLINK_YELLOW", INT2FIX(LED_BLINK_GREEN));
 	rb_define_const(rb_mKinectaby, "LED_BLINK_GREEN", INT2FIX(LED_BLINK_GREEN));
 	rb_define_const(rb_mKinectaby, "LED_BLINK_RED_YELLOW", INT2FIX(LED_BLINK_RED_YELLOW));
 
